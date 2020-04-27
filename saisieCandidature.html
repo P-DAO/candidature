@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+		
+		<fieldset>
+			<legend>Candidature Développeur PHP</legend><br/>
+
+			<form action="recapitulatif.php" method="GEt" name="authentification" >
+				
+				<p>Les champs avec <abbr title="(obligatoire)" aria-hidden="true">*</abbr> sont obligatoires.</p><br/>
+				
+				<label>Civilité :</label>
+				<select name="civilite" size="1">
+					<option value="m">Monsieur</option>
+					<option value="mme">Madame</option>
+					<option value="mlle">Mademoiselle</option>
+				</select>
+				
+				<br/>
+				
+				<label> <abbr title="(obligatoire)">*</abbr>Nom :</label>
+				<input type="text" name="nom" placeholder="Saisir votre nom" />
+				<br/>
+				
+				
+				<label><abbr title="(obligatoire)">*</abbr>Prénom :</label>
+				<input type="text" name="prenom" placeholder="Saisir votre prénom" />
+				<br/>
+								
+				<label><abbr title="(obligatoire)">*</abbr>Date de naissance :</label>
+				<input type="date" name="date" placeholder="Date de naissance" value="2000-01-01" min="1918-01-01" max="2002-12-31" />
+				<br/>
+								
+				<label><abbr title="(obligatoire)">*</abbr>Numéro de téléphone:</label>
+				<input type="tel" name="tel" placeholder="0x.xx.xx.xx.xx" />
+				<br/>
+								
+				<label><abbr title="(obligatoire)">*</abbr>Adresse électronique:</label>
+				<input type="email" name="email" placeholder="aaaaa@bbbb.ccc" />
+				<br/>
+								
+				<label> Niveau de PHP :</label>
+				<br/>
+				<input class="form-radio" type="radio" name="nivPHP" value="deb" checked/>Débutant
+				<input class="form-radio" type="radio" name="nivPHP" value="moy" />Moyen
+				<input class="form-radio" type="radio" name="nivPHP" value="bon" />Bon
+				<input class="form-radio" type="radio" name="nivPHP" value="exp" />Expert
+				
+				<br/>
+				
+				<label> Le ou les frameworks PHP déjà pratiqués:</label>
+				<br/>
+				<input class="box" type="checkbox" name="frameworks[]" value="sym" />Symfony
+				<input class="box" type="checkbox" name="frameworks[]" value="code" />Codelgniter
+				<input class="box" type="checkbox" name="frameworks[]" value="fuel" />FuelPHP
+				<input class="box" type="checkbox" name="frameworks[]" value="cake" />CakePHP
+				<input class="box" type="checkbox" name="frameworks[]" value="lara" />Laravel
+				<br/>
+								
+				<label >Présentation du parcours professionel:</label>
+				<br/>
+				<textarea name="presentation" /></textarea>
+			<br/>
+			<input type="submit" value="Valider" />
+			<input type="reset" value="Annuler"/>
+			</fieldset>
+			</form>
+			
+	</body>
+	
+</html>

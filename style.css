@@ -1,0 +1,47 @@
+abbr {
+  position: relatif;
+  left: -1em;
+  color: red;
+}
+
+p{
+	font-style: italic;
+	font-size:15px;}
+	
+input{
+	 margin: 15px 0;
+	}
+textarea{
+	width: 50%;
+	height:150px;
+	padding:12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #cc;
+	background-color: #f8f8f8;
+	font-size: 15px;
+	resize: none;
+	}
+select{
+	 margin: 15px 0;
+	}
+.box{ margin: 20px 0;
+	margin-right: 5px;
+	}
+
+table, tr, td {
+  background-color: #f2f2f2;
+  padding: 20px;
+    border: 1px solid black;
+  border-collapse: collapse;
+}
+.form-radio{
+margin-top: 15px 0 ;
+}
+
+.vide{
+	color: red;
+}
+label{
+	margin-top:15px;
+}
+
